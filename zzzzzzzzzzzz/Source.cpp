@@ -69,13 +69,10 @@ int main()
 		cin >> returndate;
 		date = returndate - borrowdate;
 
-		cout << date;
-		if (date > 5)
-		{
-			for (int fine = 0; fine <= date; fine++)
-			{
-				fine = fine + fine;
-			}cout << "fine equals $" << fine << endl;
+		fine = (date - 5) * 1;//since $1 is fine for one day and date-5 gives us the over time .
+
+		cout << "fine is " << fine << endl;
+
 
 
 		}
